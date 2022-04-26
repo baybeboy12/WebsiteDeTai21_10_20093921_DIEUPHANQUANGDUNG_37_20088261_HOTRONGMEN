@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-xs-12">
+            <img src="../IMG/16671445.jpg"  width="100%" alt="">
+        </div>
+        <div class="col-xs-12">
+            <nav class="navbar navbar-expand-sm bg-dark justify-content-center">
+                <ul class="navbar nav">
+                    <li class="navbar-item"><a href="#" class="navbar-link" id="btn2">Đăng ký</a></li>
+                </ul>
+            </nav>
+            <div class="col-xs-12">
+                <h4 style="text-align: center;">DANH SÁCH TÀI KHOẢN</h4>
+                <table class="table table-striped" role="table" id="danhSach">
+                    <tr>
+                        <th>STT</th>
+                        <th>Họ tên</th>
+                        <th>User Name</th>
+                        <th>Mật khẩu</th>
+                        <th>Ngày Sinh</th>
+                        <th>Điện thoại</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <div class="col-xs-12">
+                <p style="text-align: center;">Mã sinh viên:........................Lớp: DH16</p>
+            </div>
+        </footer>
+        <div class="modal fade" role="dialog" id="myModal">
+            <div class="modal-dialog" style="margin-top: 10px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="text-left">THÔNG TIN CÁ NHÂN</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form" class="form-horizontal" style="margin-top: 10px;">
+                            <label for="Name" class="control-label col-xs-3">Họ tên</label>
+                            <div class="col-xs-9">
+                                <input type="text" name="Name" id="Name" class="form-control">
+                                <span class="text-danger" id="tbName" style="color: red;">*</span>
+                            </div>
+                            <label for="Username" class="control-label col-xs-3">Tên tài khoản</label>
+                            <div class="col-xs-9" style="margin-bottom: 10px;">
+                                <input type="text" name="Username" id="Username" class="form-control">
+                                <span class="text-danger" id="tbUsername" style="color: red;">*</span>
+                            </div>
+                            <label for="Password" class="control-label col-xs-3">Mật khẩu</label>
+                            <div class="col-xs-9">
+                                <input type="text" name="Password" id="Password" class="form-control">
+                                <span class="text-danger" id="tbPassword" style="color: red;">*</span>
+                            </div>
+                            <label for="Ngaysinh" class="control-label col-xs-3">Ngày sinh</label>
+                            <div class="col-xs-9">
+                                <input type="date" name="Ngaysinh" id="Ngaysinh" class="form-control">
+                                <span class="text-danger" id="tbNgaysinh" style="color: red;">*</span>
+                            </div>
+                            <label for="SDT" class="control-label col-xs-3">Số điện thoại</label>
+                            <div class="col-xs-9">
+                                <input type="text" name="SDT" id="SDT" class="form-control">
+                                <span class="text-danger" id="tbSDT" style="color: red;">*</span>
+                            </div>
+                            <button class="btn btn-sucess btn-group-justified" id="Save" type="button"
+                                style="color: white;background-color: green;width: 100%;">Save  </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

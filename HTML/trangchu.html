@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 960px;
+            border: 1px solid rgb(6, 6, 14);
+            color: gray;
+        }
+
+        #header {
+            height: 100px;
+            background-color: #294e79;
+            position: relative;
+            color: white;
+        }
+
+        #header img {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        #header h1 {
+            position: absolute;
+            top: 20px;
+            left: 120px;
+        }
+
+        #header p {
+            position: absolute;
+            bottom: 20px;
+            left: 120px;
+        }
+
+        #header form {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .menu-parent {
+            position: absolute;
+            right: 10px;
+            bottom: 0;
+            display: flex;
+            list-style: none;
+        }
+
+        .parent-parent a {
+            color: white;
+            padding: 10px 20px;
+            display: block;
+            text-decoration: none;
+            background-color: green;
+            margin-left: 10px;
+        }
+
+        .menu-parent a:hover {
+            color: red;
+            background-color: purple;
+        }
+
+        #header input,
+        #header button {
+            background-color: #1c3451;
+            border: 1px solid #058dbe;
+            padding: 5px;
+        }
+
+        #header input::-webkit-input-placeholder,
+        #header button {
+            color: white;
+        }
+
+        #section {
+            width: 70%;
+            float: left;
+            padding-right: 40px;
+            text-align: center;
+        }
+
+        .form-col {
+            width: 58%;
+            float: left;
+        }
+
+        .form-row {
+            clear: both;
+            line-height: 30px;
+        }
+
+        #aside {
+            width: 25%;
+            float: right;
+            margin: 30px 1%;
+            background-color: #f9f9f9;
+        }
+
+        #aside img {
+            width: 230px;
+            margin-top: 20px;
+            border: 1px solid gray;
+            padding: 3px;
+        }
+
+        p {
+            margin-top: 10px;
+            text-align: justify;
+        }
+
+        #aside p:last-child {
+            font-weight: bold;
+            float: right;
+        }
+
+        h3 {
+            border-bottom: 1px dashed gray;
+            line-height: 40px;
+        }
+
+        #footer {
+            clear: both;
+            background-color: #294e79;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img src="../IMG/logo.jpg" alt="">
+        <h1 style="color: red;">Welcome to store</h1>
+        <p style="color: red;">Rất hân hạnh được phục vụ</p>
+        <form action="">
+            <input type="search" name="txtSearch" id="txtSearch" placeholder="search the site..." size="30">
+            <button>go</button>
+        </form>
+        <ul class="menu-parent">
+            <li><a href="" style="margin-right: 10px;background-color: rgb(98, 228, 98);">Home</a></li>
+            <li><a href="" style="margin-right: 10px;background-color: rgb(98, 228, 98);">Promotion</a></li>
+            <li><a href="" style="margin-right: 10px;background-color: rgb(98, 228, 98);">Gift Baskets</a></li>
+            <li><a href="" style="margin-right: 10px;background-color: rgb(98, 228, 98);">Services</a></li>
+            <li><a href="" style="margin-right: 10px;background-color: rgb(98, 228, 98);">About</a></li>
+        </ul>
+    </div>
+    <div id="section" style="background-image: url(../IMG/imgBG_DangNhap.jpg);height: 100%;">
+        <br><br><br><br>
+        <label for="txtUsername" style="color: yellow;">Tên đăng nhập</label>
+        <input type="text" name="txtUsername" id="txtUsername" placeholder="nhập tên đăng nhập"> <br>
+        <label for="MatKhau" style="color: yellow;">Mật khẩu</label>
+        <input type="text" id="txtMatkhau" placeholder="nhập mật khẩu"> <br>
+        <button style="background-color: aqua;">Đăng nhập</button>
+        <button style="background-color: aqua;"><a href="../HTML/formDangKy.html" target="_blank">Đăng ký</a></button>
+        <br><br><br><br><br><br> <br>
+        <button><a href="../HTML/sanpham.html" target="_blank">Xem sản phẩm</a></button>
+    </div>
+
+    <div id="aside" style="background-image: url(../IMG/imgBG.jpg);">
+        <h3 style="color: rgb(252, 252, 252);">Giới thiệu</h3>
+        <img src="../img/flower1.jpg" alt="">
+        <p style="color: white;">Cửa hàng chúng mình chuyên phân phối các sản phẩm phụ kiện điện thoại, sạc dự phòng,
+            tai nghe, dây cáp sạc
+            chất lượng, bao giá rẻ nhất thị trường, bao chất lượng bền, đẹp.</p>
+        <br>
+        <button style="background-color: red;"> <a href="../HTML/gioithieuthanhvien.html" target="_blank">Xem thành
+                viên!!!</a></button>
+    </div>
+    <div id="footer">
+        <p style="text-align: center;"> <span style="color: rgb(114, 189, 219);">Software engineer Department - Industrial University of Ho Chi Minh
+                city</span></p>
+    </div>
+</body>
+
+</html>
